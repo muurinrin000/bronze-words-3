@@ -42,104 +42,41 @@ h1{
   background:rgba(77,171,247,0.15);
   border-radius:50%;
   cursor:pointer;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  color:#1565c0;
-  font-size:13px;
-  font-weight:bold;
-
-  transition:all 0.15s;
 }
 
-.tap:active{
-  transform:scale(1.1);
-  background:rgba(77,171,247,0.3);
-}
-
-
-
-.eye-left{
-  top:52%;
-  left:29%;
-  width:18%;
-  height:13%;
-}
-
-.eye-right{
-  top:52%;
+/* 前向きの体 */
+.neck{
+  top:35%;
   left:54%;
-  width:18%;
-  height:13%;
+  width:16%;
+  height:7%;
 }
 
-.eyebrow-left{
-  top:45%;
-  left:28%;
-  width:18%;
-  height:8%;
-}
+.shoulder-left{ top:39%; left:37%; width:14%; height:6%; }
+.shoulder-right{ top:39%; left:71%; width:14%; height:6%; }
 
-.eyebrow-right{
-  top:45%;
-  left:55%;
-  width:18%;
-  height:8%;
-}
+.chest{ top:48%; left:53%; width:18%; height:8%; }
 
-.nose{
-  top:61%;
-  left:43%;
-  width:15%;
-  height:13%;
-}
+.arm-left{ top:50%; left:34%; width:12%; height:17%; }
+.arm-right{ top:50%; left:76%; width:12%; height:17%; }
 
-.mouth{
-  top:75%;
-  left:36%;
-  width:28%;
-  height:10%;
-}
+.hand-left{ top:67%; left:30%; width:14%; height:8%; }
+.hand-right{ top:67%; left:78%; width:14%; height:8%; }
 
-.ear-left{
-  top:55%;
-  left:3%;
-  width:14%;
-  height:18%;
-}
+.finger-left{ top:70%; left:27%; width:10%; height:6%; }
+.finger-right{ top:70%; left:88%; width:10%; height:6%; }
 
-.ear-right{
-  top:55%;
-  right:3%;
-  width:14%;
-  height:18%;
-}
+.leg-left{ top:76%; left:50%; width:13%; height:16%; }
+.leg-right{ top:76%; left:65%; width:13%; height:16%; }
 
-.face{
-  top:82%;
-  left:23%;
-  width:54%;
-  height:10%;
-}
+.knee-left{ top:77%; left:50%; width:12%; height:6%; }
+.knee-right{ top:77%; left:66%; width:12%; height:6%; }
 
-/* 髪の毛：上の髪部分だけ */
-.hair{
-  top:6%;
-  left:24%;
-  width:52%;
-  height:16%;
-}
+.foot-left{ top:92%; left:45%; width:15%; height:6%; }
+.foot-right{ top:92%; left:67%; width:15%; height:6%; }
 
-/* 頭：おでこ〜頭の上あたり。髪より少し下 */
-.head{
-  top:22%;
-  left:32%;
-  width:36%;
-  height:10%;
-}
-
+/* 左上の後ろ姿 */
+.back{ top:28%; left:9%; width:17%; height:12%; }
 
 
 .result{
@@ -173,19 +110,34 @@ h1{
   <div class="face-area">
     <img src="C0EE03F6-B841-4F2B-BEAF-A8DD9C71AE4F.png" class="face-img" alt="顔のイラスト">
 
-  <!-- 顔の中をタップ -->
-  <button class="tap eye-left" onclick="showWord('eye','目')"></button>
-  <button class="tap eye-right" onclick="showWord('eye','目')"></button>
-  <button class="tap eyebrow-left" onclick="showWord('eyebrow','眉毛')"></button>
-  <button class="tap eyebrow-right" onclick="showWord('eyebrow','眉毛')"></button>
-  <button class="tap nose" onclick="showWord('nose','鼻')"></button>
-  <button class="tap mouth" onclick="showWord('mouth','口')"></button>
-  <button class="tap ear-left" onclick="showWord('ear','耳')"></button>
-  <button class="tap ear-right" onclick="showWord('ear','耳')"></button>
-  <button class="tap hair" onclick="showWord('hair','髪の毛')"></button>
-  <button class="tap head" onclick="showWord('head','頭')"></button>
-  <button class="tap face" onclick="showWord('face','顔')"></button>
-</div>
+<!-- 体の中をタップ -->
+<button class="tap neck" onclick="showWord('neck','首')"></button>
+
+<button class="tap shoulder-left" onclick="showWord('shoulder','肩')"></button>
+<button class="tap shoulder-right" onclick="showWord('shoulder','肩')"></button>
+
+<button class="tap chest" onclick="showWord('chest','胸')"></button>
+
+<button class="tap arm-left" onclick="showWord('arm','腕')"></button>
+<button class="tap arm-right" onclick="showWord('arm','腕')"></button>
+
+<button class="tap hand-left" onclick="showWord('hand','手')"></button>
+<button class="tap hand-right" onclick="showWord('hand','手')"></button>
+
+<button class="tap finger-left" onclick="showWord('finger','指')"></button>
+<button class="tap finger-right" onclick="showWord('finger','指')"></button>
+
+<button class="tap leg-left" onclick="showWord('leg','足')"></button>
+<button class="tap leg-right" onclick="showWord('leg','足')"></button>
+
+<button class="tap knee-left" onclick="showWord('knee','ひざ')"></button>
+<button class="tap knee-right" onclick="showWord('knee','ひざ')"></button>
+
+<button class="tap foot-left" onclick="showWord('foot','足先')"></button>
+<button class="tap foot-right" onclick="showWord('foot','足先')"></button>
+
+<button class="tap back" onclick="showWord('back','背中')"></button>
+  </div>
     
 
   <div class="result">
